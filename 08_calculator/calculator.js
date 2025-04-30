@@ -29,6 +29,7 @@ const power = function(value,toPower) {
 const factorial = function(value) {
   if (value === 0) return 1;
 
+  // Multiply from the starting value to 1
   // Use for loop to countdown from (value-1) to 1
 	for (i=value-1; i>=1; i--) {
     value *= i;
