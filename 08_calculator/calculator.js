@@ -26,8 +26,14 @@ const power = function(value,toPower) {
   return Math.pow(value,toPower);	
 };
 
-const factorial = function() {
-	
+const factorial = function(value) {
+  if (value === 0) return 1;
+
+  // Use for loop to countdown from (value-1) to 1
+	for (i=value-1; i>=1; i--) {
+    value *= i;
+  }
+  return value;
 };
 
 // Do not edit below this line
