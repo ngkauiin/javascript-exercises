@@ -1,6 +1,10 @@
 const sumAll = function(numOne, numTwo) {
   let sum = 0;
-  
+
+   if (numOne <0 || numTwo <0) {
+    return 'ERROR';
+   }
+
   let startNum, lastNum;
   (numOne> numTwo) ? lastNum = numOne : lastNum = numTwo;
   (lastNum === numOne) ? startNum = numTwo : startNum = numOne;
