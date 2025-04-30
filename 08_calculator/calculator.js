@@ -22,8 +22,8 @@ const multiply = function(array) {
   return Number(result);
 };
 
-const power = function() {
-	
+const power = function(value,toPower) {
+  return Math.pow(value,toPower);	
 };
 
 const factorial = function() {
