@@ -1,7 +1,9 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(F) {
+  return roundNumberTo((F-32)*5/9, 1);
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(C) {
+  return roundNumberTo(C*9/5+32, 1);
 };
 
 function roundNumberTo(num, precision) {
