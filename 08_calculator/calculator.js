@@ -14,8 +14,12 @@ const sum = function(array) {
   return Number(sum);
 };
 
-const multiply = function() {
-  
+const multiply = function(array) {
+  let result = 1;
+	for (const item of array) {
+    result *= item;
+  }
+  return Number(result);
 };
 
 const power = function() {
