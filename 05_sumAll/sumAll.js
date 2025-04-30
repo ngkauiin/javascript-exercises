@@ -1,7 +1,9 @@
 const sumAll = function(numOne, numTwo) {
   let sum = 0;
 
-   if (numOne <0 || numTwo <0) {
+   if ((numOne <0 || numTwo <0) ||
+   (numOne % 1 !== 0 || numTwo % 1 !== 0 ))
+   {
     return 'ERROR';
    }
 
