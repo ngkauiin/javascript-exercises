@@ -17,7 +17,7 @@ function calculatePersonAge(person) {
   if ('yearOfDeath' in person) {
     person['age'] = person.yearOfDeath - person.yearOfBirth;
   } else {
-    person['age'] = Date.getFullYear() - person.yearOfBirth;
+    person['age'] = new Date().getFullYear() - person.yearOfBirth;
   }
 }
 
