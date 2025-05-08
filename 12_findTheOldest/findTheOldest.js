@@ -1,9 +1,16 @@
 const findTheOldest = function(people) {
-  const oldestPerson = people.sort((personA, personB) => {
-    calculatePersonAge(personA);
-    calculatePersonAge(personB);
-
-  })
+  const oldestPerson = people
+                        .sort((personA, personB) => {
+                          calculatePersonAge(personA);
+                          calculatePersonAge(personB);
+                          if (personA.age > personB.age) {
+                            return -1
+                          } else {
+                            return 1
+                          }
+                        })
+                        .at(0);
+  return oldestPerson;
 };
 
 function calculatePersonAge(person) {
